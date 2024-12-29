@@ -16,3 +16,11 @@ build:
         manual: 
           - src: 'src/**/*.ts'
             dest: .
+    - image: prn2108/client
+      context: client
+      docker:
+        dockerfile: Dockerfile
+      sync: 
+        manual: 
+          - src: '**/*.js'
+            dest: .
